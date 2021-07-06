@@ -11,11 +11,14 @@ body{
 
 :root{
     --black : #000;
+    --gradient-light1 : rgba(255, 255, 255, 0);
+    --gradient-light2: rgb(255, 255, 255);
     --red-main :#ef233c ;
     --red-main-light :#ef233b27 ;
     --white : #fff ;
     --whatsapp : #4CAF50;
     --phone : #2196F3;
+    --dark-color:#000E36;
 }
 
 a{
@@ -255,7 +258,6 @@ img{
     position: absolute;
     top: 0rem;
     left: 0rem;
-    z-index: -1;
     animation: contact-animation 1s infinite;
     transition: transform 0.25s ease;
 }
@@ -330,7 +332,7 @@ img{
 
 .banner-img-wrapper::before{
     content: '';
-    background-image: linear-gradient(to left,rgba(255,255,255,0),rgba(255,255,255,.972));;
+    background-image: linear-gradient(to left,var(--gradient-light1),var(--gradient-light2));;
     z-index: -5;
     position: absolute;
     width: 50%;
@@ -553,9 +555,7 @@ img{
 
     }
 
-    .sub-head{
-        /* margin-top: 10rem; */
-    }
+  
 
     .RiyaJewels-Heading{
         position: absolute;
